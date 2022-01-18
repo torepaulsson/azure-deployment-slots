@@ -1,3 +1,8 @@
+# Update
+I found the issue for my problems, it was that I was using the seperate resource for function app settings. If i declared the environment settings inside the function app and in the staging slot, all worked, no validation error.
+
+Note that you MIGHT need to initially remove the existing function app if you've deployed something before, after that I was able to deploy multiple times.
+
 # Azure Function App with Deployment Slots 
 A test to get Azure Function App using deployment slot for staging.
 
